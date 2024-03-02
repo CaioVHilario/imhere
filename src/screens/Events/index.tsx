@@ -9,8 +9,9 @@ import {
 } from 'react-native';
 import { styles } from './styles';
 import { Participant } from '../../components/Participant';
+import { TextInputMask } from 'react-native-masked-text';
 
-export default function Home() {
+export default function Events() {
   const [participants, setParticipants] = useState<string[]>([]);
   const [newParticipant, setNewParticipant] = useState("");
 
@@ -44,13 +45,17 @@ export default function Home() {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.eventTitle}>
-        Nome do Evento
-      </Text>
+      <TouchableOpacity>
+        <Text style={styles.eventTitle}>
+          Nome do Evento
+        </Text>
+      </TouchableOpacity>
 
-      <Text style={styles.eventDate}>
+      <TouchableOpacity>
+        <Text style={styles.eventDate}>
           Quarta, 28 de Fevereiro de 2024.
-      </Text>
+        </Text>
+      </TouchableOpacity>
 
       <View style={styles.form}>
           <TextInput 

@@ -4,13 +4,13 @@ export const styles = StyleSheet.create({
     container: {
       flex: 1,
       backgroundColor: 'black',
-      padding: 30,
+      paddingHorizontal: 30,
     },
     eventTitle: {
       fontSize: 33,
       color: '#fff',
       fontWeight: 'bold',
-      marginTop: 20,
+      marginTop: 10,
     },
     eventDate: {
         fontSize: 18,
